@@ -1,0 +1,407 @@
+/* RESET DE MARGIN, PADDIGN E ADIÇÃO DO GOOGLE FONTS */
+
+
+@import url(https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap);
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f0f8ff;
+    color: #004466;
+}
+
+
+/* CABEÇALHO */
+
+
+.cabecalho {
+    background-color: #004466;
+    padding: 20px 0;
+}
+
+.navegacao ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+.navegacao li {
+    margin: 0 15px;
+}
+
+.navegacao a {
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: bold;
+}
+
+
+/* TODAS AS SEÇÕES */
+
+
+.titulos {
+    display: block;
+    justify-content: left;
+    align-items: start;
+}
+.secao {
+    padding: 60px 20px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    padding: 15vh;
+    font-size: 150%;
+    align-items: center;
+}
+
+.secao p {
+    margin-bottom: 20px;
+    font-size: 1.2em;
+}
+
+.secao img {
+    width: 100%;
+    max-width: 80vh;
+    height: 47vh;
+    border-radius: 5px;
+}
+
+
+/* SEÇÃO 1 */
+
+
+.secao1 {
+    background-color: #000000;
+    color: white;
+}
+
+.texto_secao1 {
+    padding-right: 17vh;
+}
+
+
+/* SEÇÃO 2 */
+
+
+.secao2 {
+    background-image: url('/assets/images/boias_inteligentes.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position:bottom;
+    color: #ffffff;
+}
+
+.texto_secao2 {
+    padding-left: 17vh;
+}
+
+.imagem_texto_secao2{
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+}
+
+/* SEÇÃO 3 */
+
+
+.secao3 {
+    color: white;
+    background-color: #000000;
+}
+
+.texto_secao3 {
+    padding-right: 6vh;
+}
+
+
+/* SEÇÃO 4 */
+
+
+.secao4 {
+    color: white;
+    background-color: #003047;
+}
+
+.texto_secao4 {
+    padding-left: 17vh;
+}
+
+.imagem_texto_secao4{
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+}
+
+
+/* SEÇÃO 5 */
+
+
+.secao5 {
+    background-color: black;
+    color: #ffffff;
+}
+
+.texto_secao5 {
+    padding-right: 17vh;
+}
+
+.lista_beneficios {
+    padding-right: 8vh;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+}
+
+
+/* SEÇÃO 6 */
+
+
+.secao6 {
+    height: 77vh;
+    background-image: url('/assets/images/oceano_limpo.jpg');
+    background-size: cover;;
+    background-repeat: no-repeat;
+    background-position:bottom;
+    color: #ffffff;
+}
+
+.texto_secao6 {
+    padding-bottom: 7vh;
+}
+
+.imagem_texto_secao6{
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+}
+
+
+/* Rodapé */
+
+
+.rodape {
+    background-color: #004466;
+    color: #ffffff;
+    text-align: center;
+    padding: 40px 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 21vh;
+}
+
+.sobre-nos, .contato, .redes-sociais {
+    margin: 20px;
+    max-width: 300px;
+}
+
+.rodape h2 {
+    margin-bottom: 15px;
+    font-size: 1.5em;
+}
+
+.rodape p, .rodape ul, .rodape a {
+    font-size: 1em;
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.rodape ul {
+    list-style: none;
+    padding: 0;
+}
+
+.rodape ul li {
+    margin-bottom: 10px;
+}
+
+.rodape a:hover {
+    text-decoration: underline;
+}
+
+
+/* Funções */
+
+
+.menu-toggle {
+    display: none;
+    cursor: pointer;
+}
+
+.menu-toggle.active + .navegacao ul {
+    display: block;
+}
+
+
+/* Responsividade para celular */
+
+
+@media screen and (max-width: 768px) {
+
+
+    h1 {
+        align-items: center;
+    }
+
+    /* CABEÇALHO */
+
+    
+    .navegacao li {
+        margin: 1vw;
+    }
+
+
+    /* SEÇÕES */
+
+
+    .secao {
+        display: block;
+        padding: 2em 2em;
+    }
+
+
+    /* SEÇÃO 1 */
+     
+
+    .texto_secao1 {
+         padding-right: 0;
+         margin-bottom: 40px;
+    }
+
+
+    /* SEÇÃO 2 */
+
+
+    .imagem_texto_secao2{
+        flex-direction: column;
+    }
+
+    .texto_secao2 {
+        padding-left: 0;
+        margin: 30px 0;
+    }
+
+
+    /* SEÇÃO3 */
+
+
+    .texto_secao3 {
+        padding-right: 0;
+        margin-bottom: 40px;
+    }
+
+
+    /* SEÇÃO4 */
+
+
+    .imagem_texto_secao4{
+        flex-direction: column;
+    }
+
+    .texto_secao4 {
+        padding-left: 0;
+        margin: 30px 0;
+    }
+
+
+    /* SEÇÃO 5 */
+
+
+    .texto_secao5 {
+        padding-right: 0;
+        justify-content: center;
+    }
+
+    .lista_beneficios {
+        padding: 0;
+        text-align: start;
+        margin: 30px 0;
+    }
+
+
+    /* SEÇÃO 6 */
+
+
+    .texto_secao6 {
+        padding-top: 8vh;
+    }
+
+
+    /* RODAPÉ */
+
+
+    .rodape {
+        display: block;
+        gap: 0vh;
+        padding: 2vw 19vw;
+    }
+}
+
+
+    /* INTEGRAÇÂO COM JAVASCRIPT */
+
+
+/* CARROSSEL */
+
+
+.carrossel {
+    position: relative;
+    max-width: 600px;
+    margin: auto;
+    height: 47vh;
+    max-width: 80vh;
+    width: 80%;
+}
+
+.carrossel-imagens {
+    display: flex;
+    overflow: hidden;
+}
+
+.carrossel-imagens img {
+    width: 100%;
+    display: none;
+    transition: transform 0.5s ease-in-out;
+}
+
+.carrossel-imagens img.active {
+    display: block;
+}
+
+.voltar, .proximo {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    user-select: none;
+    background-color: #004466;
+    z-index: 1;
+}
+
+.proximo {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+.voltar {
+    left: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+.voltar:hover, .proximo:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+
